@@ -31,8 +31,7 @@ const int INF = 1<<31-1;
 const int MOD = 1e9+7;
 
 void solve() {
-    int myVariable = 8;
-    debug(myVariable);
+
 }
 
 int main() {
