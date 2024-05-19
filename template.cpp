@@ -14,16 +14,16 @@ typedef pair<int,int> pii;
     #define debug(x)
 #endif
 
-#define print_vi(vec) for(int v:vec) cout<<v<<' '; cout<<'\n';
-#define print_vvi(mat) for(vi vec:mat) { print_vi(vec) } cout<<'\n';
-#define print_pii(vp) for(int p:vp) cout<<p.F<<' '<<p.S<<'\n'; cout<<'\n';
-
 #define forab(i,a,b) for(int i=a; i<b; i++)
 #define forn(i,n) for(int i=0; i<n; i++)
 #define all(v) v.begin(), v.end()
 #define pb push_back
 #define S second
 #define F first
+
+#define print_vi(vec) for(int v:vec) cout<<v<<' '; cout<<'\n';
+#define print_vvi(mat) for(vi vec:mat) { print_vi(vec) } cout<<'\n';
+#define print_pii(vp) for(pii p:vp) cout<<p.F<<' '<<p.S<<'\n'; cout<<'\n';
 
 const ld eps = 1e-9;
 const ld pi = acos(-1);
