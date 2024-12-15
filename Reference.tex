@@ -1,0 +1,38 @@
+\documentclass[10pt,a4paper,addpoints]{exam}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.5in, right=0.5in, top=0.6in, bottom=0.6in, landscape]{geometry}
+
+\usepackage{listings}
+\twocolumn
+
+\lhead{reference}
+\rhead{\thepage}
+\cfoot{fabian montes}
+
+\lstdefinestyle{mystyle}{
+	basicstyle=\ttfamily\footnotesize,
+	language=C++,
+	breakatwhitespace=true,
+	breaklines=true,
+	xleftmargin=\parindent,
+	captionpos=b,
+	keepspaces=true,
+	keywordstyle=\bfseries,
+	commentstyle=\itshape,
+	numbers=left,
+	showspaces=false,
+	showstringspaces=false,
+	showtabs=false,
+	tabsize=2,
+}
+\lstset{style=mystyle}
+
+\title{Reference}
+
+\begin{document}
+
+\section{Template}
+\lstinputlisting[language=c++, firstline=1, lastline=29]{template.cpp}
+
+\end{document}
