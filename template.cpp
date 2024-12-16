@@ -26,3 +26,11 @@ int main() {
 	while(t--) solve();
 	return 0;
 }
+
+// medir tiempo de ejecucion
+int executionTime() {
+	clock_t exetime = clock();
+	// instrucciones a cronometrar
+	exetime = clock() - exetime;
+	cout<<"ExecutionTime : "<<((double)exetime/CLOCKS_PER_SEC)<<" s"<<endl;
+}

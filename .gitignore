@@ -3,3 +3,7 @@ code.cpp
 
 # ejecutables
 *.exe
+
+# casos de prueba
+in*.txt
+out*.txt
