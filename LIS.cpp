@@ -25,20 +25,22 @@ struct LIS {
 		if(lis[inx].empty()) lis.pop_back(), ptrs.pop_back();
 		ins.pop_back();
 	}
-	vector<int> getSequence() {
-		vector<int> res;
-		int i = lis.size() - 1;
-		int x = ptrs[i].size() - 1;
-		while(i > 0) {
-			res.push_back(lis[i][x]);
-			x = ptrs[i][x];
-			i--;
-		}
-		res.push_back(lis[i][x]);
-		reverse(res.begin(), res.end());
-		return res;
-	}
+	vector<int> getSequence();
 };
+
+vector<int> LIS::getSequence() {
+	vector<int> res;
+	int i = lis.size() - 1;
+	int x = ptrs[i].size() - 1;
+	while(i > 0) {
+		res.push_back(lis[i][x]);
+		x = ptrs[i][x];
+		i--;
+	}
+	res.push_back(lis[i][x]);
+	reverse(res.begin(), res.end());
+	return res;
+}
 
 int main() {
 	vector<int> a = {3,2,6,4,5,6,1,2,3,5,7,4,8,1,2,9};

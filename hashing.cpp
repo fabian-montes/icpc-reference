@@ -43,6 +43,7 @@ struct RollingHash {
 
 	// i&j inclusive and 1-indexed
 	pll getSubstringHash(int i, int j) { return (H[j] - H[i-1]) * I[i-1]; }
+	pll getSubstringHash(int i, int j) { return (H[j+1] - H[i]) * I[i]; } // s[i:j] 0-indexed
 };
 
 pll getHash(string s) {

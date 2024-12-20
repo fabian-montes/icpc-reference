@@ -5,5 +5,10 @@ code.cpp
 *.exe
 
 # casos de prueba
+*.in
+*.out
 in*.txt
 out*.txt
+
+# ideas y anotaciones
+brainstorm/*
