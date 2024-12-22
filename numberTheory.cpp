@@ -6,6 +6,16 @@ typedef long long ll;
 ll gcd(ll a, ll b) { return b==0 ? a : gcd(b, a%b); }
 ll lcm(ll a, ll b) { return a / gcd(a,b) * b; }
 
+ll modpow(ll b, ll e, ll m) { // (b^e)%m
+	ll r = 1;
+	while(e) {
+		if(e&1) r = r*b%m;
+		e >>= 1;
+		b = b*b%m;
+	}
+	return r;
+}
+
 ll binpow(ll b, ll e) {
 	ll r = 1;
 	while(e) {
@@ -74,5 +84,6 @@ int main() {
 	auto [g,x,y] = extendedGcd(25,18);
 	cout<<g<<' '<<x<<' '<<y<<endl;
 	cout<<binpow(2,10)<<endl;
+	cout<<modpow(2,1e5,1e9+7)<<endl;
 	return 0;
 }
